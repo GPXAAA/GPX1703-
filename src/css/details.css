@@ -677,7 +677,7 @@ body {
   float: left;
 }
 
-.text .text3 {
+.text3 {
   float: right;
   width: 197px;
   height: 485px;
@@ -817,4 +817,24 @@ body {
 #operations {
   width: 486px;
   height: 137px;
+}
+
+.goods_buy_btns .buy {
+  display: inline-block;
+  width: 210px;
+  height: 50px;
+  background: #f7661f;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+
+.goods_buy_btns .shouchang {
+  display: inline-block;
+  width: 210px;
+  height: 50px;
+  background: blue;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
 }

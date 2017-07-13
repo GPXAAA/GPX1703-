@@ -17,10 +17,10 @@ require(['config'],function(){
 						return `
 							<li>
 								<img src="${item.img}" alt="" />
-								<p><a href="">${item.name}</a></p>
+								<p><a href="../html/details.html">${item.name}</a></p>
 								<p>${item.content}</p>
 								<p><span>抢购价：</span><strong>${item.money}</strong></p>
-								<span class="sp"><a href="">立即抢购</a></span>
+								<span class="sp"><a href="../html/details.html">立即抢购</a></span>
 							</li>
 						`
 					});
@@ -52,10 +52,10 @@ require(['config'],function(){
 								return `
 								<li>
 								<img src="${item.img}" alt="" />
-								<p><a href="">${item.name}</a></p>
+								<p><a href="../html/details.html">${item.name}</a></p>
 								<p>${item.content}</p>
 								<p><span>抢购价：</span><strong>${item.money}</strong></p>
-								<span class="sp"><a href="">立即抢购</a></span>
+								<span class="sp"><a href="../html/details.html">立即抢购</a></span>
 								</li>
 								`
 							});

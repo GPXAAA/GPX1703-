@@ -464,6 +464,67 @@ require(['config'],function(){
 
 
 
+		// 页面刷新/重新打开，显示欢迎登录界面
+		// 获取cookie：document.cookie
+		var cookies = document.cookie;
+		console.log(cookies);
+
+		if(cookies.length>0){
+			cookies = cookies.split('; ');
+
+			// 遍历cookies，拿到想要的cookie
+			cookies.forEach(function(item){
+				// 把cookie拆分成name,value
+				var arr = item.split('=');
+
+				if(arr[0] === 'phone'){
+					$phone = arr[1];
+				}else if(arr[0] === 'password'){
+					$psw = arr[1];
+				}
+			});
+
+			showStaus(true);
+		}
+
+		function showStaus(isLogin){
+
+			// 登录
+			// 显示登录信息
+			// 隐藏表单
+			if(isLogin){
+				// 根据cookie信息显示页面状态
+				// 显示欢迎界面
+				$('.userpanel2').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
+
+				// 隐藏表单
+				$('.userpanel').css({display:'none'});
+			}
+
+			// 退出
+			// 显示表单
+			else{
+				$('.userpanel').css({display:'block'});
+				$('.userpanel2').css({display:'none'});
+			}
+			
+		}
+
+
+		// 退出
+		// 删除cookie
+		// 利用设置过期时间达到删除的效果。
+		$('#btnn').on('click',function(){
+				var now = new Date();
+				now.setDate(now.getDate()-7);
+
+				document.cookie = 'username=null;expires=' + now;
+				document.cookie = 'password=null;expires=' + now;
+
+
+				showStaus();
+			})
+		
 
 			// var $a=$('#t7d').find('a');
 		

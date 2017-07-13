@@ -625,11 +625,12 @@ body{
 	}
 }
 
-.text .text3{
+.text3{
 	float:right;
 	width:197px;
 	height:485px;
 	border-left:1px solid #ccc;
+	// overflow:hidden;
 }
 
 .ewm {
@@ -758,6 +759,32 @@ body{
 		width: 486px;
 		height: 137px;
 	}
+
+.goods_buy_btns{
+	.buy{
+		display:inline-block;
+		width: 210px;
+		height: 50px;
+		// display: block;
+		background: #f7661f;
+		text-align: center;
+		line-height: 50px;
+		color:#fff;
+	}
+	.shouchang{
+		display:inline-block;
+		width: 210px;
+		height: 50px;
+		// display: block;
+		background:blue;
+		text-align: center;
+		line-height: 50px;
+		color:#fff;
+	}
+
+}
+
+
 
 #pinglun0{
 
