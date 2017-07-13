@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>抢购</title>
+	<link rel="stylesheet" href="../css/list.css">
+	<!--  -->
+	<script src="../lib/jquery-3.2.1.js"></script>
+	<!-- <script src="../js/list.js"></script> -->
+	<script src="../js/require.js" data-main="../js/list">
+		
+	</script>
+</head>
+<body>
+<div class="box0">
+	<div class="top0">
+
+	<div class="juzhong">
+		<ul class="tl">
+			<li><i class="iconfont icon-back"></i><a href="">掌上新蛋</a></li>
+			<li><a href="">企业团购</a></li>
+		</ul>
+		<div class="topr">
+		<span class="userpanel">
+		<a href="html/zhuche.html">注册</a>
+		<b>|</b>
+		<a href="html/denlu.html">登录</a>
+		<span id="spWelcome" class="welcome ml10">下午好,欢迎来新蛋购物！</span>
+		</span>
+
+		<ul class="tr">
+		<li><a href="" >我的订单</a></li>
+		<li id="" class="hasub">
+		<a href=" " class="oper">我的新蛋<s></s></a>
+		</li>
+		<li><a href="">帮助中心</a></li>
+		<li class="hasub service">
+		<a href="" class="oper">客户服务<s></s></a></li>
+		</ul>
+		</div>
+		</div>
+		</div>
+	
+		<div class="top1">
+		<div class="juzhong">
+			<a href="" class="top1-1"><img src="../img/logocn_1213.png" alt=""></a>
+
+		<div class="searchbar">
+			<div class="searchinput">
+        <input type="text"  placeholder="华为品牌专场&#32;直击底价&#65281;" name="keyword"  />
+    	</div>
+    	<a href="" onclick="return doSearch($('#topSearch'));" class="btn_search " title="搜索">搜索</a>
+
+    	<p class="hot">
+    	<a href="">智能硬件</a>
+    	<b>|</b>
+    	<a href="">iPhone7</a>
+    	<b>|</b>
+    	<a href="">mate9</a>
+    	<b>|</b>
+    	<a href="">Thinkpad</a>
+    	<b>|</b>
+    	<a href="">电视机</a>
+		</p>
+			
+		</div>
+		<div class="top1-2">
+		<a href=""><img src="../img/all_1.gif" alt=""></a>			
+			</div>
+		</div>
+
+		</div>
+
+
+		<div class="top2">
+			<div class="juzhong">
+				<div class="meun">
+					<h3 class="al1">
+					<a href="">全部商品分类</a>
+					</h3>
+			
+				</div>
+
+		<ul class="nav">
+    	<li><a href="../index.html" title="首页">首页</a></li>
+    	<li><a href="" title="限时抢购" target="">限时抢购</a></li>
+    	<li><a href="" title="团团赚" target="">团团赚</a></li>
+    	<li><a href="" title="海外直购" target="">海外直购</a></li>
+    	<li><a href="" title="MOPS专区" target="">MOPS专区</a></li>
+    
+   		 <li><a href="" title="爱车配" target="">爱车配</a></li>
+    
+    	
+    	</ul>
+		
+
+		<div class="utility">
+			<div class="ut1">
+				<div class="gu">
+					<a href="">购物车
+					<strong id="headerCartCount">0</strong>
+					件
+					<span></span>
+					</a>
+				</div>
+			</div>
+			<div class="ut2">
+				<div class="sc">
+					<a href="">收藏提醒
+					<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+			</div>
+		</div>
+		
+		<!-- 索引 -->
+		<div class="top3">
+		<div class="juzhong">
+		<div class="top3nav">
+			<a href="">首页</a><span>></span>
+			<a href="">海外直购</a><span>></span>
+
+		</div>
+		</div>
+</div>
+	<div class="top4">
+		<div class="juzhong">
+		<div class="main">
+			<img src="../img/980x203.jpg" alt="">
+		</div>
+		</div>
+	</div>
+	<div class="top5">
+	<div class="juzhong">
+	<div class="datalist"></div>
+	</div>
+	</div>
+
+	<div class="under">
+	<div class="juzhong">
+	<div class="under1">
+		<h2>新手上路</h2>
+		<ul>
+    <!-- 怎样购物 -->
+    <li><a href="" title="怎样购物">怎样购物</a></li>
+    
+    <!-- 支付常见问题 -->
+    
+    <li><a href="" title="支付常见问题">支付常见问题</a></li>
+    
+    
+    <!-- 免运费政策 -->
+    <li><a href="" title="免运费政策">免运费政策</a></li>
+
+    <!-- 发票须知 -->
+    <li><a href="" title="发票须知">发票须知</a></li>
+
+    <!-- 签收验货流程 -->
+    <li><a href="" title="签收验货流程">签收验货流程</a></li>
+
+    <!-- 用户评论 -->
+    <li><a href="" title="用户评论/咨询">用户评论/咨询</a></li>
+
+    <!-- 大件商品订购流程 -->
+    <li><a href="" title="大件商品订购流程">大件商品订购流程</a></li>  
+</ul>
+	</div>
+
+	 <!-- 2 -->
+	<div class="under2">
+		<h2>售后服务</h2>
+		<ul>
+	<!-- 退换货政策 -->
+    <li><a href="" title="退换货政策">退换货政策</a></li>
+    
+    <!-- 订单查询 -->
+    <li><a href="" title="订单查询">订单查询</a></li>
+    
+    <!-- 售后申请 -->
+    <li><a href="" title="售后申请">售后申请</a></li>
+    
+</ul>
+	</div>
+
+
+	 <!-- 3 -->
+	<div class="under3">
+		<h2>特色服务</h2>
+		<ul>
+    <!-- 关于会员制 -->
+    <li><a href="" title="关于会员制">关于会员制</a></li>
+    <!-- 价格保护 -->
+    <li><a href="" title="价格保护">价格保护</a></li>	
+</ul>
+	</div>
+
+
+ <!-- 4-->
+	<div class="under4">
+		<h2>申请合作</h2>
+		<ul>
+	<li><a href="" title="申请成为供应商">申请成为供应商</a></li>
+	<li><a href="" title="申请入驻开放平台">申请入驻开放平台</a></li>
+    <li><a href="" title="友情合作">友情合作</a></li>
+    <li><a href="" title="网站联盟">网站联盟</a></li>
+    <li><a href="" title="企业客户">企业客户</a></li>
+</ul>
+	</div>
+
+
+
+	 <!-- 5 -->
+	<div class="under5">
+		<h2>关于我们</h2>
+		<ul>
+	<li><a href="" title="新蛋集团">新蛋集团 </a></li>   
+    <li><a href=""  title="联系我们">联系我们</a></li>
+    <li><a href="" title="诚聘英才">诚聘英才</a></li>
+     
+</ul>
+	</div>
+
+	</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-1">
+			<a href=""><img src="../img/top31.png" alt=""></a>
+			<a href=""><img src="../img/top32.png" alt=""></a>
+			<a href=""><img src="../img/top33.png" alt=""></a>
+			<a href=""><img src="../img/top34.png" alt=""></a>
+			<p>
+			新蛋集团网站：
+			<a href="">美国新蛋</a>
+			<a href="">中国新蛋</a>
+			<a href="">加拿大新蛋</a>
+			<a href="">新蛋软件</a>
+			</p>
+			<p>
+				<span>© 2001-2017</span>
+				<span>新蛋商贸（上海）有限公司</span>
+				<span>版权所有</span>
+				<span>
+					<a href="http://www.miibeian.gov.cn/" title="上海市互联网准入证书" target="_blank">沪ICP备:16033615</a>
+				</span>
+			</p>
+		</div>
+	</div>
+	
+	</div>
+
+</body>
+</html>

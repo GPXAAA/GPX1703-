@@ -1,0 +1,26 @@
+{
+  "name": "newegg",
+  "version": "0.0.1",
+  "description": "1703egg项目",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "newegg",
+    "1703"
+  ],
+  "author": "ccc",
+  "license": "ISC"
+}

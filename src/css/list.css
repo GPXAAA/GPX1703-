@@ -1,0 +1,540 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot?t=1499503529449");
+  /* IE9*/
+  src: url("../font/iconfont.eot?t=1499503529449#iefix") format("embedded-opentype"), url("../font/iconfont.woff?t=1499503529449") format("woff"), url("../font/iconfont.ttf?t=1499503529449") format("truetype"), url("../font/iconfont.svg?t=1499503529449#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\e697";
+}
+
+.icon-cart:before {
+  content: "\e698";
+}
+
+.icon-close:before {
+  content: "\e69a";
+}
+
+.icon-comments:before {
+  content: "\e69b";
+}
+
+.icon-delete:before {
+  content: "\e69d";
+}
+
+.icon-edit:before {
+  content: "\e69e";
+}
+
+.icon-email:before {
+  content: "\e69f";
+}
+
+.icon-form:before {
+  content: "\e6a2";
+}
+
+.icon-help:before {
+  content: "\e6a3";
+}
+
+.icon-less:before {
+  content: "\e6a5";
+}
+
+.icon-moreunfold:before {
+  content: "\e6a6";
+}
+
+.icon-more:before {
+  content: "\e6a7";
+}
+
+.icon-search:before {
+  content: "\e6ac";
+}
+
+.icon-selected:before {
+  content: "\e6ad";
+}
+
+.icon-success:before {
+  content: "\e6b1";
+}
+
+.icon-account:before {
+  content: "\e6b8";
+}
+
+.icon-add:before {
+  content: "\e6b9";
+}
+
+.icon-atm:before {
+  content: "\e6ba";
+}
+
+.icon-attachment:before {
+  content: "\e6c0";
+}
+
+.icon-gifts:before {
+  content: "\e6db";
+}
+
+.icon-lights:before {
+  content: "\e6de";
+}
+
+.icon-map:before {
+  content: "\e715";
+}
+
+.icon-phone:before {
+  content: "\e725";
+}
+
+.icon-bussinessman:before {
+  content: "\e726";
+}
+
+.icon-shoes:before {
+  content: "\e728";
+}
+
+.icon-mobilephone:before {
+  content: "\e72a";
+}
+
+.icon-favoritesfilling:before {
+  content: "\e730";
+}
+
+.icon-accountfilling:before {
+  content: "\e732";
+}
+
+.icon-creditlevel:before {
+  content: "\e735";
+}
+
+.icon-creditlevelfilling:before {
+  content: "\e736";
+}
+
+.icon-ship:before {
+  content: "\e74f";
+}
+
+.icon-bussinesscard:before {
+  content: "\e753";
+}
+
+.icon-favorites:before {
+  content: "\e7ce";
+}
+
+.icon-originalimage:before {
+  content: "\e806";
+}
+
+.icon-video:before {
+  content: "\e820";
+}
+
+.icon-apparel:before {
+  content: "\e839";
+}
+
+.icon-bags:before {
+  content: "\e83a";
+}
+
+.icon-code:before {
+  content: "\e842";
+}
+
+/*
+	* 单行注释
+	* 多行注释
+	
+	* sass的变量：
+		* 一般使用在属性值中
+		* 在属性名中使用变量：# {$borderDirection}
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 12px;
+}
+
+.box0 {
+  width: 100%;
+}
+
+.top0 {
+  width: 100%;
+  height: 25px;
+  background-color: #f1f1f1;
+  line-height: 25px;
+}
+
+.juzhong {
+  margin: 0 auto;
+  width: 980px;
+  min-width: 980px;
+  overflow: hidden;
+}
+
+.tl li {
+  float: left;
+  padding: 0 5px;
+}
+
+.topr {
+  float: right;
+}
+
+.userpanel {
+  position: relative;
+  top: -8px;
+  padding: 0 5px;
+}
+
+.tr {
+  display: inline-block;
+}
+
+.tr li {
+  float: left;
+  padding: 0 5px;
+}
+
+.top1 {
+  clear: both;
+  width: 100%;
+  height: 86px;
+}
+
+.top1-1 {
+  position: relative;
+  left: 4px;
+  top: 11px;
+  display: inline-block;
+}
+
+.searchbar {
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.searchbar .searchinput {
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #f60;
+  display: inline-block;
+  float: left;
+}
+
+.searchbar .searchinput input {
+  width: 330px;
+  border: 0;
+  background: none;
+  outline: none;
+  text-indent: 6px;
+}
+
+.searchbar .btn_search {
+  display: inline-block;
+  width: 98px;
+  height: 34px;
+  background: #f60;
+  color: #fff;
+  text-indent: 0;
+  font: bolder 14px/34px simsun;
+  text-align: center;
+  float: left;
+  border-radius: 0 3px 3px 0;
+}
+
+.searchbar .hot {
+  margin-top: 4px;
+  overflow: hidden;
+  clear: both;
+  line-height: 29px;
+}
+
+.hot a {
+  line-height: 29px;
+}
+
+.top1-2 {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.top2 {
+  clear: both;
+  width: 100%;
+  height: 40px;
+  background-color: #10286C;
+}
+
+.meun {
+  display: inline-block;
+}
+
+.al1 {
+  width: 179px;
+  height: 40px;
+  background: url(../img/sprite_v140425.png) no-repeat 120px -1252px #F60;
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.al1 a {
+  height: 40px;
+  overflow: hidden;
+  display: block;
+  color: #FFF;
+  font: 14px/42px microsoft yahei;
+}
+
+.nav {
+  width: 630px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.nav li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  transition: all .5s;
+}
+
+.nav li a {
+  padding: 0 10px;
+  display: block;
+  color: #fff;
+  background-position: left 100px;
+  font: 14px/40px microsoft yahei;
+}
+
+.utility {
+  width: 230px;
+  height: 40px;
+  position: relative;
+  top: -43px;
+  left: 0;
+  float: right;
+}
+
+.utility .ut1 {
+  float: left;
+  display: inline-block;
+}
+
+.utility .ut1 .gu {
+  width: 112px;
+  height: 40px;
+  background: #F60;
+}
+
+.utility .ut1 .gu a {
+  color: #fff;
+  background-position: left 100px;
+  font: 14px/40px microsoft yahei;
+}
+
+.utility .ut1 .gu a span {
+  width: 17px;
+  height: 11px;
+  position: absolute;
+  right: 130px;
+  top: 18px;
+  background: url(../img/bsj.png) no-repeat;
+}
+
+.utility .ut2 {
+  display: inline-block;
+}
+
+.utility .ut2 .sc {
+  width: 112px;
+  height: 40px;
+  background: #F60;
+  display: inline-block;
+}
+
+.utility .ut2 .sc a {
+  color: #fff;
+  background-position: left 100px;
+  font: 14px/40px microsoft yahei;
+}
+
+.utility .ut2 .sc a span {
+  width: 17px;
+  height: 11px;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  background: url(../img/bsj.png) no-repeat;
+}
+
+.top3 {
+  clear: both;
+  width: 100%;
+  background: #f0f0f0;
+}
+
+.top3nav {
+  width: 379px;
+  height: 43px;
+  line-height: 29px;
+}
+
+.top4 {
+  clear: both;
+  width: 100%;
+  height: 100%;
+}
+
+.top4 .main {
+  margin: 10px auto;
+  width: 980px;
+  height: 203px;
+}
+
+.top5 {
+  width: 100%;
+}
+
+.top5 li {
+  text-align: center;
+  width: 232px;
+  height: 322px;
+  float: left;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.top5 li p {
+  width: 216px;
+  height: 35px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.under {
+  clear: both;
+  width: 100%;
+  height: 185px;
+  margin-top: 200px;
+}
+
+.under .juzhong div {
+  float: left;
+}
+
+.under .juzhong div ul {
+  padding-top: 10px;
+}
+
+.under .juzhong div ul li {
+  padding-top: 5px;
+}
+
+.under .under1 {
+  width: 183px;
+  height: 185px;
+  padding-right: 1%;
+  margin-left: 1.5%;
+}
+
+.under2 {
+  width: 183px;
+  height: 185px;
+  padding-right: 1%;
+  padding-left: 1.5%;
+  border-left: 1px solid #ccc;
+}
+
+.under3 {
+  width: 183px;
+  height: 185px;
+  padding-right: 1%;
+  padding-left: 1.5%;
+  border-left: 1px solid #ccc;
+}
+
+.under4 {
+  width: 183px;
+  height: 185px;
+  padding-right: 1%;
+  padding-left: 1.5%;
+  border-left: 1px solid #ccc;
+}
+
+.under5 {
+  width: 104px;
+  height: 185px;
+  padding-right: 1%;
+  padding-left: 1.5%;
+  border-left: 1px solid #ccc;
+}
+
+.footer {
+  margin-top: 55px;
+  background: #FFF;
+  border-top: 1px solid #FFF;
+}
+
+.footer-1 {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer-1 p {
+  font-size: 12px;
+  padding: 0 0 10px;
+}
+
+.footer-1 p a {
+  margin-left: 5px;
+}
