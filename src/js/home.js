@@ -243,7 +243,46 @@ require(['config'],function(){
 				width:480,height:205,
 				type:'horizontal',
 				page:true
-			})
+			});
+
+			$('#t8lbt').Carousel2({
+				imgs:['../src/img/480x205.jpg',
+				'../src/img/480x205 (1).jpg',
+				'../src/img/480x205 (2).jpg'
+				],
+				width:480,height:205,
+				type:'horizontal',
+				page:true
+			});
+
+			$('#t9lbt').Carousel2({
+				imgs:['../src/img/480x205.jpg',
+				'../src/img/480x205 (1).jpg',
+				'../src/img/480x205 (2).jpg'
+				],
+				width:480,height:205,
+				type:'horizontal',
+				page:true
+			});
+
+			$('#t10lbt').Carousel2({
+				imgs:['../src/img/480x205.jpg',
+				'../src/img/480x205 (1).jpg',
+				'../src/img/480x205 (2).jpg'
+				],
+				width:480,height:205,
+				type:'horizontal',
+				page:true
+			});
+			$('#t11lbt').Carousel2({
+				imgs:['../src/img/480x205.jpg',
+				'../src/img/480x205 (1).jpg',
+				'../src/img/480x205 (2).jpg'
+				],
+				width:480,height:205,
+				type:'horizontal',
+				page:true
+			});
 
 			$('#tabd1').Carouseltab2({
 				imgs1:['../src/img/S5M-5CX-3SD_02.jpg','../src/img/S5M-5TS-3WK.jpg',
@@ -495,7 +534,7 @@ require(['config'],function(){
 			if(isLogin){
 				// 根据cookie信息显示页面状态
 				// 显示欢迎界面
-				$('.userpanel2').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
+				// $('.userpanel2').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
 
 				// 隐藏表单
 				$('.userpanel').css({display:'none'});

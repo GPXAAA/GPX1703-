@@ -122,7 +122,7 @@
 			// 前后按钮
 			if(opt.buttons){
 				$('<div/>').addClass('prev').appendTo($self);
-				$('<div/>').addClass('next1').html('换一批').appendTo($('.top4'));
+				$('<div/>').addClass('next1').html('换一批').appendTo($('#trun'));
 			}
 			
 

@@ -163,7 +163,13 @@ body{
 	position: relative;
   top: -8px;
   padding: 0 5px;
+
 }
+
+// .userpanel2{
+// 	position:relative;
+// 	top:0;
+// }
 .tr{
 	display:inline-block;
 
@@ -1440,6 +1446,10 @@ li{
     }
 	}
 	}
+}
+
+#t8d,#t9d,#t10d,#t11d{
+	display:none;
 }
 
 .dtab{
