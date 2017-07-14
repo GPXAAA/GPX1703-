@@ -59,7 +59,9 @@ require(['config'],function(){
 
 			for(var i=0;i<res.length-1;i++){
 				var ph=res[i]
+				console.log(ph);
 				console.log(ph.phone);
+				console.log(ph.password);
 				// console.log(res[1].phone);
 				// console.log(res[5].phone);
 				$('.btn').on('click',()=>{
@@ -69,15 +71,16 @@ require(['config'],function(){
 				$('#output1').html('手机号正确');
 				console.log(222);
 
-				if ($('#password').val()==ph.password){
-				$('#output2').html('密码正确');
-				console.log(333);
+				// if($('#password').val()==ph.password){
+				// $('#output2').html('密码正确');
+				// console.log($('#password').val);
+				// if($('#password').val==ph.password){
+
+				// 	$('#output2').html('密码正确');
+
 					$('.top2-2').css({display:'none'});
 					$('.top22x').css({display:'block'});
 				// location.href = '../index.html';
-
-
-		
 
 		// 绑定点击事件，实现登录状态改变
 	
@@ -96,41 +99,14 @@ require(['config'],function(){
 			document.cookie = 'password=' + $psw + ';expires=' + now;
 
 
-			// showStaus(true);
-		// 			// 页面刷新，判断cookie是否存在
-		// var cookies = document.cookie;
-		// console.log(cookies);
-
-		// // 以"; "拆分成数组
-		// var arr_cookie = cookies.split('; ');
-		// console.log(arr_cookie);
-
-		// // 遍历数组
-		// var $phone;
-		// var $psw;
-		// arr_cookie.forEach(function(item){
-		// 	console.log(item);
-		// 	var arr = item.split('=');
-		// 	console.log(arr);
-
-		// 	console.log(arr[1]);
-
-		// 	if(arr[0] === 'username'){
-		// 		$phone = arr[1];
-		// 	}else if(arr[0] === 'password'){
-		// 		$psw = arr[1];
-		// 	}
-		// });
-
-
-
-			}else{
-				$('#output2').html('密码错误');
-				console.log(444);
-			}
+			// }else{
+			// 	// $('#output2').html('密码错误');
+			// 	// console.log(444);
+			// 	$('#output2').html('密码错误');
+			// }
 				}else{
 				$('#output1').html('手机号未验证');
-				console.log(444);
+				
 			}
 				});
 
