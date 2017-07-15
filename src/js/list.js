@@ -16,16 +16,22 @@ require(['config'],function(){
 				// 把cookie拆分成name,value
 				var arr = item.split('=');
 
-				if(arr[0] === 'phone'){
-					$phone = arr[1];
-				}else if(arr[0] === 'password'){
-					 $psw = arr[1];
+				if(arr[0]==='phone'){
+					$phone=arr[1];
+				}else if(arr[0]==='password'){
+					 $psw=arr[1];
 				}
+				console.log(arr[1]);
+					console.log($phone);
+				
+				if(arr[0]==='phone' || arr[0]==='password'){
+				showStaus(true);
+			}
 			}); 
 
-			showStaus(true);
+		
 		}
-
+		console.log($phone)
 		function showStaus(isLogin){
 
 			// 登录
@@ -34,6 +40,7 @@ require(['config'],function(){
 			if(isLogin){
 				// 根据cookie信息显示页面状态
 				// 显示欢迎界面
+				console.log($phone)
 				$('#spWelcome').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
 
 				// 隐藏表单

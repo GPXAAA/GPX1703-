@@ -501,6 +501,8 @@ require(['config'],function(){
 			});
 
 
+			var $phone;
+			var $psw;
 
 		// 页面刷新/重新打开，显示欢迎登录界面
 		// 获取cookie：document.cookie
@@ -515,14 +517,20 @@ require(['config'],function(){
 				// 把cookie拆分成name,value
 				var arr = item.split('=');
 
-				if(arr[0] === 'phone'){
-					$phone = arr[1];
-				}else if(arr[0] === 'password'){
-					$psw = arr[1];
+				if(arr[0]==='phone'){
+					$phone=arr[1];
+				}else if(arr[0]==='password'){
+					 $psw=arr[1];
 				}
+				console.log(arr[1]);
+					console.log($phone);
+				
+				if(arr[0]==='phone' || arr[0]==='password'){
+				showStaus(true);
+			}
 			});
 
-			showStaus(true);
+		
 		}
 
 		function showStaus(isLogin){
@@ -533,6 +541,8 @@ require(['config'],function(){
 			if(isLogin){
 				// 根据cookie信息显示页面状态
 				// 显示欢迎界面
+				
+				
 				$('#spWelcome').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
 
 				// 隐藏表单

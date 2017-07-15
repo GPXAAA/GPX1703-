@@ -503,6 +503,9 @@ require(['config'],function(){
 
 
 
+		var $phone;
+			var $psw;
+
 		// 页面刷新/重新打开，显示欢迎登录界面
 		// 获取cookie：document.cookie
 		var cookies = document.cookie;
@@ -516,14 +519,20 @@ require(['config'],function(){
 				// 把cookie拆分成name,value
 				var arr = item.split('=');
 
-				if(arr[0] === 'phone'){
-					$phone = arr[1];
-				}else if(arr[0] === 'password'){
-					$psw = arr[1];
+				if(arr[0]==='phone'){
+					$phone=arr[1];
+				}else if(arr[0]==='password'){
+					 $psw=arr[1];
 				}
+				console.log(arr[1]);
+					console.log($phone);
+				
+				if(arr[0]==='phone' || arr[0]==='password'){
+				showStaus(true);
+			}
 			});
 
-			showStaus(true);
+		
 		}
 
 		function showStaus(isLogin){
@@ -534,17 +543,19 @@ require(['config'],function(){
 			if(isLogin){
 				// 根据cookie信息显示页面状态
 				// 显示欢迎界面
-				// $('.userpanel2').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
+				
+				
+				$('#spWelcome').html('您好，欢迎'+$phone+'来新蛋购物！<button id="btnn">退出</button>');
 
 				// 隐藏表单
-				$('.userpanel').css({display:'none'});
+				$('.up').css({display:'none'});
 			}
 
 			// 退出
 			// 显示表单
 			else{
-				$('.userpanel').css({display:'block'});
-				$('.userpanel2').css({display:'none'});
+				$('.up').css({display:'inline-block'});
+				$('#spWelcome').html('您好，欢迎来新蛋购物！');
 			}
 			
 		}
@@ -555,9 +566,9 @@ require(['config'],function(){
 		// 利用设置过期时间达到删除的效果。
 		$('#btnn').on('click',function(){
 				var now = new Date();
-				now.setDate(now.getDate()-7);
+				now.setDate(now.getDate()-8);
 
-				document.cookie = 'username=null;expires=' + now;
+				document.cookie = 'phone=null;expires=' + now;
 				document.cookie = 'password=null;expires=' + now;
 
 

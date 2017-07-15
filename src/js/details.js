@@ -25,14 +25,20 @@ require(['config'],function(){
 				// 把cookie拆分成name,value
 				var arr = item.split('=');
 
-				if(arr[0] === 'phone'){
-					$phone = arr[1];
-				}else if(arr[0] === 'password'){
-					$psw = arr[1];
+				if(arr[0]==='phone'){
+					$phone=arr[1];
+				}else if(arr[0]==='password'){
+					 $psw=arr[1];
 				}
+				console.log(arr[1]);
+					console.log($phone);
+				
+				if(arr[0]==='phone' || arr[0]==='password'){
+				showStaus(true);
+			}
 			});
 
-			showStaus(true);
+			
 		}
 
 		function showStaus(isLogin){
