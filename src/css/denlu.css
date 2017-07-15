@@ -385,5 +385,20 @@ h1 {
 
 .top22x h1 {
   text-align: center;
-  line-height: 397px;
+  line-height: 200px;
+  color: red;
+}
+
+.top22x .btn1 {
+  display: inline-block;
+  margin: 20px 65px;
+  width: 252px;
+  height: 34px;
+}
+
+.top22x .btn2 {
+  display: inline-block;
+  margin: 20px 65px;
+  width: 252px;
+  height: 34px;
 }

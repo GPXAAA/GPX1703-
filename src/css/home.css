@@ -1544,6 +1544,10 @@ body .Carousel4 .horizontal .c4 img {
   top: 0px;
 }
 
+#t8d, #t9d, #t10d, #t11d {
+  display: none;
+}
+
 .dtab {
   clear: both;
   float: right;

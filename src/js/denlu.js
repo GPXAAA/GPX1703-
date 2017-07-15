@@ -47,6 +47,7 @@ require(['config'],function(){
 			}
 			
 		}
+
 		
 			
 		$.ajax({
@@ -56,27 +57,28 @@ require(['config'],function(){
 
 				console.log(res.length);
 
+			
+				$('.btn').on('click',()=>{			
+			// console.log($('#phone').val());
+			// 	console.log(ph.phone);
 
 			for(var i=0;i<res.length-1;i++){
 				var ph=res[i]
-				console.log(ph);
-				console.log(ph.phone);
-				console.log(ph.password);
-				// console.log(res[1].phone);
-				// console.log(res[5].phone);
-				$('.btn').on('click',()=>{
-					console.log(111);
-			console.log($('#phone').val())
-			if ($('#phone').val()==ph.phone){
+				// console.log(ph);
+					// console.log(ph.phone);
+			if($('#phone').val()==ph.phone){
 				$('#output1').html('手机号正确');
-				console.log(222);
+				// console.log($('#phone').val());
+			
 
 				// if($('#password').val()==ph.password){
 				// $('#output2').html('密码正确');
 				// console.log($('#password').val);
-				// if($('#password').val==ph.password){
+				console.log(ph.password);
+				if($('#password').val()==ph.password){
+					$('#output2').html('密码正确');
+				// 	console.log(ph.password);
 
-				// 	$('#output2').html('密码正确');
 
 					$('.top2-2').css({display:'none'});
 					$('.top22x').css({display:'block'});
@@ -88,7 +90,7 @@ require(['config'],function(){
 			var $psw = $('#password').val();
 
 			// 利用cookie保存登录信息
-			// 设定有效期：添加expires参数
+					// 设定有效期：添加expires参数
 			// 七天有效期设置
 			// 在当前事件基础上+7
 			var now = new Date();
@@ -99,19 +101,21 @@ require(['config'],function(){
 			document.cookie = 'password=' + $psw + ';expires=' + now;
 
 
-			// }else{
-			// 	// $('#output2').html('密码错误');
-			// 	// console.log(444);
-			// 	$('#output2').html('密码错误');
-			// }
+			}else{
+				
+				$('#output2').html('密码错误');
+			}
 				}else{
 				$('#output1').html('手机号未验证');
 				
 			}
-				});
+			}
+		})
+				}
+		});
 
 
-
+					
 
 		$('.btn1').on('click',function(){
 			console.log(666);
@@ -140,9 +144,9 @@ require(['config'],function(){
 		
 		
 		
-		}
-		}
+		
+		
 		
 });
 });
-});
+		

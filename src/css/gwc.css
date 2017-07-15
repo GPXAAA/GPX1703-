@@ -260,49 +260,13 @@ body {
   text-align: left;
 }
 
-.top2{
-  width:100%;
-  // height:200px; 
- 
-
-
+.top2 {
+  width: 100%;
+  height: 100%;
 }
 
-.main{
+.main {
   border: 1px solid #ccc;
-  width:980px;
-  height: 200px;
-  // height:100%;
+  width: 980px;
+  height: 100%;
 }
-.main1{
-  width:781px;
-  // height: 100%;
-  float: left;
-
-}
-.mtop{
-  width: 781px;
-  height: 32px;
-  border-bottom: 1px solid #ccc;
-  // float: left;
-}
-.list{
-  width: 781px;
-  // height: 100%;
-}
-
-.jieshuan{
-  width: 180px;
-  float: left;
-  height: 200px;
-  border-left: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-}
-
-.jieshuan1{
-   width: 199px;
-  height: 32px;
-  border-bottom: 1px solid #ccc;
-}
-
-
