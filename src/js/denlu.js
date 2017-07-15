@@ -3,50 +3,6 @@ require(['config'],function(){
 	require(['jquery','common'],function($){
 		// console.log($);
 		// 
-			// 页面刷新/重新打开，显示欢迎登录界面
-		// 获取cookie：document.cookie
-		var cookies = document.cookie;
-		console.log(cookies);
-
-		if(cookies.length>0){
-			cookies = cookies.split('; ');
-
-			// 遍历cookies，拿到想要的cookie
-			cookies.forEach(function(item){
-				// 把cookie拆分成name,value
-				var arr = item.split('=');
-				console.log(arr[1]);
-
-				if(arr[0] === 'phone'){
-					$phone = arr[1];
-				}else if(arr[0] === 'password'){
-					$psw = arr[1];
-				}
-			});
-
-			showStaus(true);
-		}
-
-		function showStaus(isLogin){
-
-			// 登录
-			// 显示登录信息
-			// 隐藏表单
-			if(isLogin){
-				// 根据cookie信息显示页面状态
-				// 显示欢迎界面
-				$('.top2-2').css({display:'none'});
-				$('.top22x').css({display:'block'});
-			}
-
-			// 退出
-			// 显示表单
-			else{
-				$('.top2-2').css({display:'block'});
-				$('.top22x').css({display:'none'});
-			}
-			
-		}
 
 		
 			
@@ -113,6 +69,58 @@ require(['config'],function(){
 		})
 				}
 		});
+
+
+			// 页面刷新/重新打开，显示欢迎登录界面
+		// 获取cookie：document.cookie
+		var cookies = document.cookie;
+		console.log(cookies);
+
+		if(cookies.length>0){
+			cookies = cookies.split('; ');
+
+			// 遍历cookies，拿到想要的cookie
+			cookies.forEach(function(item){
+				// 把cookie拆分成name,value
+				var arr = item.split('=');
+				console.log(arr);
+				console.log(arr[1]);
+
+				console.log(arr[0])
+				// console.log($('#password').val())
+				if(arr[0]==='phone' || arr[0]==='password'){
+				showStaus(true);
+				}
+	
+			});
+			
+			
+		
+
+		}
+
+		// console.log(showStaus())
+		function showStaus(isLogin){
+
+			// 登录
+			// 显示登录信息
+			// 隐藏表单
+			if(isLogin){
+				// 根据cookie信息显示页面状态
+				// 显示欢迎界面
+				$('.top2-2').css({display:'none'});
+				$('.top22x').css({display:'block'});
+			}
+
+			// 退出
+			// 显示表单
+			else{
+				$('.top2-2').css({display:'block'});
+				$('.top22x').css({display:'none'});
+			}
+			
+		}
+
 
 
 					
